@@ -9,7 +9,6 @@ publish(
    name: 'Elias', // update to use your name
    email: 'elias.sabja@uc.cl' // Update to use your email
   },
-  dotfiles: true
   },
   () => {
    console.log('Deploy Complete!');
