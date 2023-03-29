@@ -1,7 +1,7 @@
 import { publish } from 'gh-pages';
 
 publish(
- 'build', // path to public directory
+ 'docs', // path to public directory
  {
   branch: 'main',
   repo: 'https://github.com/EliasSabja/la-montanesa', // Update to point to your repository

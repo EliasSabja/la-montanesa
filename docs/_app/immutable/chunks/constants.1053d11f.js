@@ -1,0 +1,1 @@
+const t=[{title:"Inicio",url:"/"},{title:"Platos",url:"/courses"},{title:"Ingredientes",url:"/ingredients"},{title:"Menús completos",url:"/"}],e="https://tarea-1.2023-1.tallerdeintegracion.cl";export{e as A,t as m};

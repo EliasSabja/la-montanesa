@@ -2,13 +2,26 @@
 //import { vitePreprocess } from '@sveltejs/kit/vite';
 import preprocess from 'svelte-preprocess';
 import adapter from '@sveltejs/adapter-static';
+//import adapter from '@sveltejs/adapter-node';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
 	// for more information about preprocessors
 	//preprocess: vitePreprocess(),
-  preprocess: preprocess(),
+  preprocess: preprocess({
+    sourceMap: true,
+    defaults: {
+      script: 'typescript',
+    },
+    typescript: {
+      typeCheck: true,
+    },
+    aliases: [
+      ['$', '/src'],
+      ['~', '/src/lib']
+    ],
+  }),
 
 	kit: {
 		// adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
@@ -18,6 +31,7 @@ const config = {
       // default options are shown
       pages: 'docs',
       assets: 'docs',
+      fallback: 'index.html' 
     }),
     paths: {
       base: "",

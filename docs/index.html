@@ -2,47 +2,35 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="./favicon.png" />
+		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400&display=swap"
+    rel="stylesheet" />
 		<meta http-equiv="content-security-policy" content="">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.e16903be.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.847936d9.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.6151251a.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.938e55b2.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/layout.svelte.b0368388.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/_layout.js.984db11e.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/_layout.da46b06b.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/_page.svelte.90dfec92.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/start.afa3fd42.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/index.bcb8faf1.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/singletons.0399c867.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/app.4279eca3.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
-
-
-<h1>Welcome to SvelteKit</h1>
-<h2>First deploy </h2>
-
-
-			
 			<script>
 				{
-					__sveltekit_x3lm51 = {
+					__sveltekit_1v68baq = {
 						env: {},
-						base: new URL(".", location).pathname.slice(0, -1),
+						base: "",
 						element: document.currentScript.parentElement
 					};
 
-					const data = [null,null];
-
 					Promise.all([
-						import("./_app/immutable/entry/start.e16903be.js"),
-						import("./_app/immutable/entry/app.938e55b2.js")
+						import("/_app/immutable/entry/start.afa3fd42.js"),
+						import("/_app/immutable/entry/app.4279eca3.js")
 					]).then(([kit, app]) => {
-						kit.start(app, __sveltekit_x3lm51.element, {
-							node_ids: [0, 2],
-							data,
-							form: null,
-							error: null
-						});
+						kit.start(app, __sveltekit_1v68baq.element);
 					});
 				}
 			</script>
